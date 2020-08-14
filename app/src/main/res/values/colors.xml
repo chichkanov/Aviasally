@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="white">#FFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+
+    <color name="black">#000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_30">#4D000000</color>
+    <color name="black_5">#0D000000</color>
+
+    <color name="n1">#FFFFFF</color>
+
+    <color name="n2">#000000</color>
+    <color name="n2_5">#0D000000</color>
+    <color name="n2_20">#33000000</color>
+    <color name="n2_40">#66000000</color>
+    <color name="n2_60">#99000000</color>
+
+    <color name="n3">#2196F3</color>
+
+    <color name="action">#6c5ce7</color>
+
+    <color name="quinceJelly">#f0932b</color>
+</resources>

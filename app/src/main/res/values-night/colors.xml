@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="n1">#191919</color>
+
+    <color name="n2">#FFFFFF</color>
+    <color name="n2_5">#0DFFFFFF</color>
+    <color name="n2_20">#33FFFFFF</color>
+    <color name="n2_40">#66FFFFFF</color>
+    <color name="n2_60">#99FFFFFF</color>
+
+    <color name="n3">#1A237E</color>
+</resources>

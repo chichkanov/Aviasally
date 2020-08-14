@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aviasally</string>
+
+    <string name="route_selection_title">В путь</string>
+    <string name="route_from_placeholder">Откуда</string>
+    <string name="route_to_placeholder">Куда</string>
+    <string name="route_find_tickets">Найти билеты</string>
+
+    <string name="select_city">Введите город</string>
+    <string name="search_city_error">Произошла ошибка</string>
+    <string name="search_city_empty">Ничего не найдено</string>
+</resources>

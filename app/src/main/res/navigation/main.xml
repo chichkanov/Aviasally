@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/routeSelection"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/routeSelection"
+        android:name="com.chichkanov.aviasally.routeselection.presentation.RouteSelectionFragment"
+        tools:layout="@layout/fragment_route_selection">
+
+        <action
+            android:id="@+id/routeDetails"
+            app:destination="@id/routeDetails"
+            app:enterAnim="@anim/screen_fade_in"
+            app:exitAnim="@anim/screen_fade_out"
+            app:popEnterAnim="@anim/screen_fade_in"
+            app:popExitAnim="@anim/screen_fade_out" >
+
+            <argument
+                android:name="fromCity"
+                app:argType="com.chichkanov.aviasally.core.domain.City" />
+
+            <argument
+                android:name="toCity"
+                app:argType="com.chichkanov.aviasally.core.domain.City" />
+
+        </action>
+
+        <action
+            android:id="@+id/searchCity"
+            app:destination="@id/searchCity"
+            app:enterAnim="@anim/screen_fade_in"
+            app:exitAnim="@anim/screen_fade_out"
+            app:popEnterAnim="@anim/screen_fade_in"
+            app:popExitAnim="@anim/screen_fade_out">
+
+            <argument
+                android:name="launchMode"
+                app:argType="com.chichkanov.aviasally.searchcity.presentation.SearchCityLaunchMode" />
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/routeDetails"
+        android:name="com.chichkanov.aviasally.routedetails.presentation.RouteDetailsFragment"
+        tools:layout="@layout/fragment_route_details">
+
+        <argument
+            android:name="fromCity"
+            app:argType="com.chichkanov.aviasally.core.domain.City" />
+
+        <argument
+            android:name="toCity"
+            app:argType="com.chichkanov.aviasally.core.domain.City" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchCity"
+        android:name="com.chichkanov.aviasally.searchcity.presentation.SearchCityFragment"
+        tools:layout="@layout/fragment_search_city">
+
+        <argument
+            android:name="launchMode"
+            app:argType="com.chichkanov.aviasally.searchcity.presentation.SearchCityLaunchMode" />
+
+    </fragment>
+
+</navigation>

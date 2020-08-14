@@ -1,0 +1,3 @@
+Key store password: dksj2893d32dsa
+Alias: avsl
+Key password: jfnd2cv948nfs
