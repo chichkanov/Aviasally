@@ -2,6 +2,7 @@ package com.chichkanov.aviasally.routeselection.presentation
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
 import com.chichkanov.aviasally.R
 import com.chichkanov.aviasally.core.ext.createViewModel
@@ -59,5 +60,6 @@ class RouteSelectionFragment : BaseFragment<RouteSelectionViewModel>() {
         fromTv.text = dataState.fromCity?.fullName
         toTv.text = dataState.toCity?.fullName
         searchBtn.isEnabled = dataState.fromCity != null && dataState.toCity != null
+        switchCitiesBtn.isVisible = dataState.fromCity != null && dataState.toCity != null
     }
 }
